@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Gatsby Blog`,
-    description: `ITdev-164 Gatsby blog`,
+    description: `ITDev-164 Gatsby blog`,
     author: `Ejaz Khan`,
     contact: {
       name: "Ejaz Khan",
@@ -10,16 +10,18 @@ module.exports = {
     }
   },
   plugins: [
-    `gatsby-plugin-react-helmet`,
+  
     {
       resolve: `gatsby-source-filesystem`,
       options: {
+        spaceId:'dzcfc1oczjva',
+        accessToken: 'U7T_O77xA5ciRXrcY4efeP2lDCNe2gYgqIXSmf6mYk',
         name: `images`,
         path: `${__dirname}/src/images`,
       },
     },
     `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
+    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
